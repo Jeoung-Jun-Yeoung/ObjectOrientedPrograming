@@ -8,7 +8,7 @@ public class HomeWork1 {
         int num;
 
         num = sc.nextInt();
-        if(num > 100 && num < 10){
+        if(num > 100 || num < 10){
             System.out.println("2자리 정수가 아닙니다.");
         }
         else {
