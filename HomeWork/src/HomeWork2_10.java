@@ -12,7 +12,6 @@ public class HomeWork2_10 {
         for (int i = 0; i < 10; i++){
             int x = random.nextInt(4);
             int y = random.nextInt(4);
-            System.out.println("x "+ x + "y " + y);
             if(array[x][y] != 0){
                 while (array[x][y] != 0){
                     x = random.nextInt(4);
@@ -23,7 +22,6 @@ public class HomeWork2_10 {
             while (value == 0){
                 value = random.nextInt(10);
             }
-            System.out.println("value " + value);
             array[x][y] = value;
         }
         for(int [] col : array){

@@ -9,7 +9,6 @@ public class HomeWork2_16 {
             System.out.print("가위 바위 보!>>");
             String user = sc.next();
             int n = (int)(Math.random()*3);
-            System.out.println("n = " + n);
             if(user.equals("그만")){
                 break;
             }
