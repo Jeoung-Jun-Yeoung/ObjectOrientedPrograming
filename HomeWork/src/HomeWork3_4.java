@@ -18,15 +18,16 @@ class Rectangle{
         System.out.printf("(%d,%d)에서 크기가 %dx%d인 사각형", this.x,this.y,this.width,this.height);
         System.out.println();
     }
-    public boolean contains(Rectangle r){
-        if(this.x <= r.x && this.width >= r.width && this.y <= r.y && this.height >= r.height){
-            return true;
+    public boolean contains(Rectangle r) {
+        if (x < r.x && y < r.y) {
+            if ((width + x) > (r.x + r.width) && (height + y) > (r.y + r.height)) {
+                return true;
+            }
         }
-        else{
-            return false;
-        }
-        // this.x this.y this.width this.height r.x r.y r.width r.height
+        return false;
     }
+        // this.x this.y this.width this.height r.x r.y r.width r.height
+
 }
 
 
